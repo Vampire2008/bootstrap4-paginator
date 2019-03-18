@@ -30,7 +30,7 @@
 	"bugs": {
 		"url": "https://github.com/Vampire2008/bootstrap4-paginator/issues"
 	},
-	"homepage": "https://github.com/Vampire2008/bootstrap4-paginator",
+	"homepage": "https://vampire2008.github.io/bootstrap4-paginator/",
 	"dependencies": {
 		"bootstrap": "^4.0.0",
 		"jquery": "^3.0.0"
