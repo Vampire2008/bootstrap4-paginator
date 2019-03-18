@@ -1,36 +1,35 @@
-# Bootstrap Paginator v1.0
+# Bootstrap4 Paginator v2.0
 
 ---
 
-Bootstrap Paginator is a jQuery plugin that simplifies the rendering of Bootstrap Pagination component. It provides methods to automates the update of the pagination status and also some events to notify the status changes within the component. For documentation and examples, please visit [Bootstrap Paginator Website](http://bootstrappaginator.org/ "Click to visit Bootstrap Paginator").
+Bootstrap4 Paginator is a jQuery plugin that simplifies the rendering of Bootstrap Pagination component. It based on [Bootstrap paginator](https://github.com/lyonlai/bootstrap-paginator) It provides methods to automates the update of the pagination status and also some events to notify the status changes within the component. For documentation and examples, open `documentation\index.html`.
 
 # Changes
 
-v 1.0
+v 2.0 (by Kain Stropov)
+
+* Paginator now supports only bootstrap v4.
+* Now paginator renders buttons only if needed, not full re-render.
+* Removed method `getPages`
+* Added method `getOption` that returns value for option or copy of options object
+* Added options for ajax call
+* Removed alignment options
+* Removed mini size option
+* Tooltips text now gets from regional settings
+* Added options `alwaysDisplayNextPrevButtons` and `alwaysDisplayFirstLastButtons`
+* option `shouldShowPage` renamed to `shouldShowPageButton`
+
+v 1.0 (by Yun Lai)
 
 * Add the support for bootstrap v3.
 * Make the page change happened in page click event stoppable
 * Remove the visibility control within getPages function and leave it with shouldShowPage function.
 
-v 0.6
+v 0.6 (by Yun Lai)
 
 * Fix the bug that will cause page out of range when updating the current page together with the total pages.
 
-v 0.5.1
+v 0.5.1 (by Yun Lai)
 
 * Use html entities in default text function instead of plain text to fix the display problem in IE 7-9
 
-# Copyright and License
-Copyright 2013 Yun Lai
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   <http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.

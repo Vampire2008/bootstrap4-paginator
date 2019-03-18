@@ -1,5 +1,27 @@
-Change log for Bootstrap Paginator
+Change log for Bootstrap4 Paginator
 ----------------------------------
+
+Version 2.0 18/Mar/2019
+----------------------------------
+
+Paginator now supports only bootstrap v4.
+
+Now paginator renders buttons only if needed, not full re-render.
+
+Removed method getPages
+
+Added method getOption that returns value for option or copy of options object
+
+Added options for ajax call
+
+Removed alignment options
+
+Removed mini size option
+
+Tooltips text now gets from regional settings
+
+Added options alwaysDisplayNextPrevButtons and alwaysDisplayFirstLastButtons
+
 
 Version 1.0 23/Sep/2013
 ----------------------------------

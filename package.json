@@ -1,0 +1,45 @@
+{
+	"name": "bootstrap4-paginator",
+	"version": "2.0.0",
+	"description": "Bootstrap4 Paginator is a jQuery plugin that simplifies the rendering of Bootstrap v4 Pagination component. It provides methods to automates the update of the pagination status and also some events to notify the status changes within the component.",
+	"browser": "./build/bootstrap-paginator.min.js",
+	"directories": {
+		"lib": "lib",
+		"test": "test"
+	},
+	"repository": "github:Vampire2008/bootstrap4-paginator",
+	"keywords": [
+		"bootstrap",
+		"bootstrap4",
+		"pagination",
+		"paginator"
+	],
+	"author": {
+		"name": "Yun Lai"
+	},
+	"contributors": [
+		{
+			"name": "Kislenko Mikhail"
+		}
+	],
+	"files": [
+		"dist/",
+		"src/"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Vampire2008/bootstrap4-paginator/issues"
+	},
+	"homepage": "https://github.com/Vampire2008/bootstrap4-paginator",
+	"dependencies": {
+		"bootstrap": "^4.0.0",
+		"jquery": "^3.0.0"
+	},
+	"devDependencies": {
+		"qunit": "^2.9.2",
+		"grunt": "^1.0.3",
+		"popper.js": "^1.14.7",
+		"grunt-contrib-uglify-es": "^3.3.0",
+		"jquery-history": "^1.0.1"
+	}
+}
