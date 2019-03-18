@@ -15,7 +15,7 @@
     cursor:pointer;
 }
 
-#bp-brand
+/* #bp-brand
 {
     float:right;
     -webkit-transition: all .4s linear;
@@ -27,7 +27,8 @@
 #bp-brand:hover
 {
     color:#fff;
-}
+} */
+
 .bp-docs-example {
     position: relative;
     margin: 15px 0;
@@ -67,7 +68,17 @@
 
 .pointer-cursor
 {
-    cursor: pointer;
+    cursor: pointer !important;
+}
+
+.cursor-left a
+{
+    cursor: w-resize !important;
+}
+
+.cursor-right a
+{
+    cursor: e-resize !important;
 }
 
 .bp-docs-anchor
