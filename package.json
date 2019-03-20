@@ -23,7 +23,7 @@
 		}
 	],
 	"files": [
-		"dist/",
+		"build/",
 		"src/"
 	],
 	"license": "MIT",
