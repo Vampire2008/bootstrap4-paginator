@@ -6,21 +6,22 @@
 		<link rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/documentation.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/sunburst.min.css">
-		<META NAME="description" CONTENT="Bootstrap Paginator is a jQuery plugin that simplifies the rendering of Bootstrap Pagination. This javascript library is good for ajax or non-ajax way of using Bootstrap Pagination.">
-		<META NAME="keywords" CONTENT="pagination,paginator,bootstrap,javascript,js,jquery,plugin,library,bootstrap4">
-			<script type="text/javascript">
-				var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-136304456-1']);
-				_gaq.push(['_trackPageview']);
-		
-				(function() {
-					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-				})();
-		
-			</script>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/sunburst.min.css">
+		<META NAME="description" CONTENT="Bootstrap Paginator is a jQuery plugin that
+			simplifies the rendering of Bootstrap Pagination. This javascript library is
+			good for ajax or non-ajax way of using Bootstrap Pagination.">
+		<META NAME="keywords"
+			CONTENT="pagination,paginator,bootstrap,javascript,js,jquery,plugin,library,bootstrap4">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136304456-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+	
+  			gtag('config', 'UA-136304456-1');
+		</script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="100">
 		<div class="navbar navbar-expand navbar-light bg-light">
@@ -87,23 +88,23 @@
 					within the component. <strong>Bootstrap v4</strong> is only supported.
 				</p>
 				<div class="row justify-content-center">
-						<a
-							href="https://github.com/Vampire2008/bootstrap4-paginator/releases"
-							target="_blank" class="btn btn-large btn-success">Download</a>
-						<a style="margin-left:10px;"
-							href="https://github.com/Vampire2008/bootstrap4-paginator" target="_blank"
-							class="btn btn-large btn-primary">Visit Project in GitHub</a>
+					<a
+						href="https://github.com/Vampire2008/bootstrap4-paginator/releases"
+						target="_blank" class="btn btn-large btn-success">Download</a>
+					<a style="margin-left:10px;"
+						href="https://github.com/Vampire2008/bootstrap4-paginator" target="_blank"
+						class="btn btn-large btn-primary">Visit Project in GitHub</a>
 				</div>
 			</div>
 			<div id="get-started" class="row">
 				<div class="col-12">
-				<h2>Get Started</h2>
-				<p>
-					It is very easy to get Bootstrap4 Paginator start working. You need to
-					include the Bootstrap, jQuery and Bootstrap Paginator before you can use
-					it. The zip ball can be download via the button provided above.
-				</p>
-				<pre>
+					<h2>Get Started</h2>
+					<p>
+						It is very easy to get Bootstrap4 Paginator start working. You need to
+						include the Bootstrap, jQuery and Bootstrap Paginator before you can use
+						it. The zip ball can be download via the button provided above.
+					</p>
+					<pre>
 			<code class="html">
 	&lt;link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"&gt;
 	&lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
@@ -111,13 +112,13 @@
 	&lt;script src="/js/bootstrap-paginator.min.js"&gt;&lt;/script&gt;
 			</code>
 		</pre>
-				<p>Then in your code, you can use the following lines to render your
-					Bootstrap Paginator. This is explained in the section <a
-						href="#minimum-configuration">Minimum Initialization</a>. The Bootstrap
-					Paginator will be rendered as shown. The only html markup required by
-					Bootstrap Paginator is an empty div.</p>
-				<div class="bp-docs-example"><ul id="bp-get-started-initialization"></div></div>
-				<pre>
+					<p>Then in your code, you can use the following lines to render your
+						Bootstrap Paginator. This is explained in the section <a
+							href="#minimum-configuration">Minimum Initialization</a>. The Bootstrap
+						Paginator will be rendered as shown. The only html markup required by
+						Bootstrap Paginator is an empty div.</p>
+					<div class="bp-docs-example"><ul id="bp-get-started-initialization"></div></div>
+					<pre>
 			<code class="html">
 	&lt;div id="example"&gt;&lt;/div&gt;
 	&lt;script type='text/javascript'&gt;
@@ -130,145 +131,153 @@
 	&lt;/script&gt;
 			</code>
 		</pre>
-	</div>
-			<div id="documentation">
-				<h2>Documentation</h2>
-				<div id="structure-explained">
-					<h3>Structure Explained</h3>
-					<p>Bootstrap Paginator will have the Bootstrap Pagination Component
-						rendered as shown in the following graph. It has 5 parts. Left most one is
-						the go to first page item. The one next to it is the previous page item.
-						The following numeric page items are of the type page. Next page item
-						comes after it. Last page item will be the last one rendered. Please note
-						that the labels are the types of each component.</p>
-					<div id="bp-docs-structure-illustration" class="text-center"><img
-							src="img/illustration.png"></div>
 				</div>
-				<div id="options">
-					<h3>Options</h3>
-					<table class="table table-striped table-hover" id="bp-docs-options-table">
-						<thead>
-							<tr>
-								<th>Attribute</th>
-								<th>Type</th>
-								<th>Default</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="bp-example-docs-option-attr">size</td>
-								<td>string</td>
-								<td>"normal"</td>
-								<td>Controls the size of output pagination component. Accepts values: <i class="bp-example-docs-option-value">small</i>, <i
-										class="bp-example-docs-option-value">normal</i>, <i
-										class="bp-example-docs-option-value">large</i>. See the <a
-										href="#size-alignment" title="Click o see the example for size
-										option">Size and alignment example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">itemContainerClass</td>
-								<td>function</td>
-								<td></td>
-								<td>This functions must return a string class name when rendering a
-									specific page item. <strong><i class="bp-example-docs-option-value">type</i></strong>,
-									<strong><i class="bp-example-docs-option-value">page</i></strong>,
-									<strong><i class="bp-example-docs-option-value">current</i></strong>
-									are given as the parameters. The default function only returns <i
-										class="bp-example-docs-option-value">"active"</i> when the page is the
-									current page and <i	class="bp-example-docs-option-value">"page-item"</i>. 
-									See the <a href="#item-container-class">Controlling the
-										item container class example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">currentPage</td>
-								<td>number</td>
-								<td>1</td>
-								<td>It marks the current page. If the current page is set out of range,
-									an exception will be thrown.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">numberOfPages</td>
-								<td>number</td>
-								<td>5</td>
-								<td>This one decides how many numeric pages (with type page as stated in
-									the <a href="#structure-explained" title="Click to see the Structure
-										Explained section for more information.">Structure Exaplained</a>
-									section) should be rendered. If its value &lt;= 0, no numeric page will be
+				<div id="documentation">
+					<h2>Documentation</h2>
+					<div id="structure-explained">
+						<h3>Structure Explained</h3>
+						<p>Bootstrap Paginator will have the Bootstrap Pagination Component
+							rendered as shown in the following graph. It has 5 parts. Left most one
+							is
+							the go to first page item. The one next to it is the previous page item.
+							The following numeric page items are of the type page. Next page item
+							comes after it. Last page item will be the last one rendered. Please note
+							that the labels are the types of each component.</p>
+						<div id="bp-docs-structure-illustration" class="text-center"><img
+								src="img/illustration.png"></div>
+					</div>
+					<div id="options">
+						<h3>Options</h3>
+						<table class="table table-striped table-hover" id="bp-docs-options-table">
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>Type</th>
+									<th>Default</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="bp-example-docs-option-attr">size</td>
+									<td>string</td>
+									<td>"normal"</td>
+									<td>Controls the size of output pagination component. Accepts values:
+										<i class="bp-example-docs-option-value">small</i>, <i
+											class="bp-example-docs-option-value">normal</i>, <i
+											class="bp-example-docs-option-value">large</i>. See the <a
+											href="#size-alignment" title="Click o see the example for size
+											option">Size and alignment example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">itemContainerClass</td>
+									<td>function</td>
+									<td></td>
+									<td>This functions must return a string class name when rendering a
+										specific page item. <strong><i class="bp-example-docs-option-value">type</i></strong>,
+										<strong><i class="bp-example-docs-option-value">page</i></strong>,
+										<strong><i class="bp-example-docs-option-value">current</i></strong>
+										are given as the parameters. The default function only returns <i
+											class="bp-example-docs-option-value">"active"</i> when the page is
+										the
+										current page and <i class="bp-example-docs-option-value">"page-item"</i>.
+										See the <a href="#item-container-class">Controlling the
+											item container class example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">currentPage</td>
+									<td>number</td>
+									<td>1</td>
+									<td>It marks the current page. If the current page is set out of range,
+										an exception will be thrown.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">numberOfPages</td>
+									<td>number</td>
+									<td>5</td>
+									<td>This one decides how many numeric pages (with type page as stated
+										in
+										the <a href="#structure-explained" title="Click to see the Structure
+											Explained section for more information.">Structure Exaplained</a>
+										section) should be rendered. If its value &lt;= 0, no numeric page
+										will be
 										rendered. See the <a href="#number-of-pages" title="Click to see the
-										Number of Pages example">Number of Pages example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">totalPages</td>
-								<td>number</td>
-								<td>1</td>
-								<td>It defines the upper limit of the page range. </td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">pageUrl</td>
-								<td>function</td>
-								<td></td>
-								<td>pageUrl fills the href attribute when rendering the page items.
-									<strong><i class="bp-example-docs-option-value">type</i></strong>,
-									<strong><i class="bp-example-docs-option-value">page</i></strong>,
-									<strong><i class="bp-example-docs-option-value">current</i></strong>
-									are given as the parameters. A string of URL should be returned. See <a
-										href="#page-url" title="Click to see the Page Url example.">Page URL
-										example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">alwaysDisplayNextPrevButtons</td>
-								<td>boolean</td>
-								<td>true</td>
-								<td>Defines buttons "Previous page" and "Next page" should be shown when current page is first or last. Used in default implementation <i>shouldShowPageButton</i>.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">alwaysDisplayFirstLastButtons</td>
-								<td>boolean</td>
-								<td>true</td>
-								<td>Defines buttons "First page" and "Last page" should be shown when current page is first or last. Used in default implementation <i>shouldShowPageButton</i>.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">shouldShowPageButton</td>
-								<td>boolean/function</td>
-								<td>function</td>
-								<td>Defines whether a page item should be shown. Before each page item
-									is rendered, the code will check whether it should be rendered. Once
-									supplied as a function, the following parameters are given: <strong><i
-											class="bp-example-docs-option-value">type</i></strong>, <strong><i
-											class="bp-example-docs-option-value">page</i></strong>, <strong><i
-											class="bp-example-docs-option-value">current</i></strong>. Boolean
-									should be returned. See <a
-										href="#controlling-the-presence-of-page-item" title="Click to see
-										Controlling The Presence of Page Item">Controlling The Presence of
-										Page Item</a> for more detail. </td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">itemTexts</td>
-								<td>function</td>
-								<td></td>
-								<td>Supplies the page item text during the rendering, it can be either
-									plain text or html. The following parameters are given: <strong><i
-											class="bp-example-docs-option-value">type</i></strong>, <strong><i
-											class="bp-example-docs-option-value">page</i></strong>, <strong><i
-											class="bp-example-docs-option-value">current</i></strong>. See <a
-										href="#page-item-text" title="Click to see Page Item Text example">Page
-										Item Example</a> for more detail. </td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">useBootstrapTooltip</td>
-								<td>boolean</td>
-								<td>false</td>
-								<td>Defines whether to use the Bootstrap Tooltip as its tooltip rather
-									than the original title attribute in the anchor tag &lt;a&gt;. See <a
-										href="#use-bootstrap-tooltip" title="Click to see Use Bootstrap
-										Tooltip example">Use Bootstrap Tooltip example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">bootstrapTooltipOptions</td>
-								<td>object</td>
-								<td></td>
-								<td><pre>
+											Number of Pages example">Number of Pages example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">totalPages</td>
+									<td>number</td>
+									<td>1</td>
+									<td>It defines the upper limit of the page range. </td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">pageUrl</td>
+									<td>function</td>
+									<td></td>
+									<td>pageUrl fills the href attribute when rendering the page items.
+										<strong><i class="bp-example-docs-option-value">type</i></strong>,
+										<strong><i class="bp-example-docs-option-value">page</i></strong>,
+										<strong><i class="bp-example-docs-option-value">current</i></strong>
+										are given as the parameters. A string of URL should be returned. See
+										<a
+											href="#page-url" title="Click to see the Page Url example.">Page URL
+											example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">alwaysDisplayNextPrevButtons</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Defines buttons "Previous page" and "Next page" should be shown
+										when current page is first or last. Used in default implementation <i>shouldShowPageButton</i>.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">alwaysDisplayFirstLastButtons</td>
+									<td>boolean</td>
+									<td>true</td>
+									<td>Defines buttons "First page" and "Last page" should be shown when
+										current page is first or last. Used in default implementation <i>shouldShowPageButton</i>.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">shouldShowPageButton</td>
+									<td>boolean/function</td>
+									<td>function</td>
+									<td>Defines whether a page item should be shown. Before each page item
+										is rendered, the code will check whether it should be rendered. Once
+										supplied as a function, the following parameters are given: <strong><i
+												class="bp-example-docs-option-value">type</i></strong>, <strong><i
+												class="bp-example-docs-option-value">page</i></strong>, <strong><i
+												class="bp-example-docs-option-value">current</i></strong>. Boolean
+										should be returned. See <a
+											href="#controlling-the-presence-of-page-item" title="Click to see
+											Controlling The Presence of Page Item">Controlling The Presence of
+											Page Item</a> for more detail. </td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">itemTexts</td>
+									<td>function</td>
+									<td></td>
+									<td>Supplies the page item text during the rendering, it can be either
+										plain text or html. The following parameters are given: <strong><i
+												class="bp-example-docs-option-value">type</i></strong>, <strong><i
+												class="bp-example-docs-option-value">page</i></strong>, <strong><i
+												class="bp-example-docs-option-value">current</i></strong>. See <a
+											href="#page-item-text" title="Click to see Page Item Text example">Page
+											Item Example</a> for more detail. </td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">useBootstrapTooltip</td>
+									<td>boolean</td>
+									<td>false</td>
+									<td>Defines whether to use the Bootstrap Tooltip as its tooltip rather
+										than the original title attribute in the anchor tag &lt;a&gt;. See <a
+											href="#use-bootstrap-tooltip" title="Click to see Use Bootstrap
+											Tooltip example">Use Bootstrap Tooltip example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">bootstrapTooltipOptions</td>
+									<td>object</td>
+									<td></td>
+									<td><pre>
 	Default:
 	{
 		animation: true,
@@ -279,223 +288,237 @@
 		container: false
 	}
 					</pre>
-									<p>This object is the same as what you've seen in <a
-											href="https://getbootstrap.com/docs/4.3/components/tooltips/#options"
-											target="_blank">Bootstrap Tooltip Documentation</a> for more detail.
-									</p></td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">onPageClicked</td>
-								<td>function</td>
-								<td></td>
-								<td>onPageClicked is the handler for the page-clicked event. The
-									signature of the handler is function(<strong><i
-											class="bp-example-docs-option-value">event</i></strong>, <strong><i
-											class="bp-example-docs-option-value">originalEvent</i></strong>,
-									<strong><i class="bp-example-docs-option-value">type</i></strong>,<strong><i
-											class="bp-example-docs-option-value">page</i></strong>). If you would
-									like the stop the page change from happening. Simply call
-									event.stopImmediatePropagation() and do the page change yourself if
-									applicable later. See <a href="#page-clicked-event" title="Click to see
-										the Page Clicked Event Example.">page-clicked Event example</a> for
-									more detail. Also the stoppable page change within page click event is
-									demonstrated in See <a href="#page-clicked-event-stoppable"
-										title="Click to see the Stopping Page Change within Page Clicked Event
-										Example.">Stopping Page Change Within Page Clicked Event</a> for more
-									detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">onPageChanged</td>
-								<td>function</td>
-								<td></td>
-								<td>onPageChanged is the handle for the page-changed event. The
-									signature of the handler is function(<strong><i
-											class="bp-example-docs-option-value">event</i></strong>, <strong><i
-											class="bp-example-docs-option-value">oldPage</i></strong>, <strong><i
-											class="bp-example-docs-option-value">newPage</i></strong>). See <a
-										href="#page-changed-event" title="Click to see the Page Changed Event
-										example">page-changed Event example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">ajaxUrl</td>
-								<td>string or function</td>
-								<td>null</td>
-								<td>This URL user for ajax requests when page changed. For work it also need <i clas="bp-example-docs-option-attr">targetElement</i>. 
-									Once supplied as a function, the following parameters are given: <i class="bp-example-docs-option-value">currentPage</i>.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">targetElement</td>
-								<td>sting or HTMLElement or JQueryObject</td>
-								<td>null</td>
-								<td>Target where will be placed ajax response.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">loadingElement</td>
-								<td>sting or HTMLElement or JQueryObject</td>
-								<td>null</td>
-								<td>Element that will be shown while ajax request in process. Optional.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">ajaxData</td>
-								<td>object or function</td>
-								<td>null</td>
-								<td>This data will be put to ajax request. Optional. Once supplied as a function, the following parameters are given: <i class="bp-example-docs-option-value">currentPage</i>.</td>
-							</tr>
-							<tr>
-								<td class="bp-example-docs-option-attr">ajaxSettings</td>
-								<td>JQuery Ajax Options or function</td>
-								<td>null</td>
-								<td>If this parameter is setted then will be used custom Ajax call (by $.ajax()) and this settings will be put as parameter.
-									<i>targetElement</i> and <i>loadingElement</i> not used. If <i>ajaxUrl</i> and/or <i>ajaxData</i> specified them will be puted to ajaxSettings.
-								</td>
-							</tr>
-						</tbody>
-					</table>
+										<p>This object is the same as what you've seen in <a
+												href="https://getbootstrap.com/docs/4.3/components/tooltips/#options"
+												target="_blank">Bootstrap Tooltip Documentation</a> for more detail.
+										</p></td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">onPageClicked</td>
+									<td>function</td>
+									<td></td>
+									<td>onPageClicked is the handler for the page-clicked event. The
+										signature of the handler is function(<strong><i
+												class="bp-example-docs-option-value">event</i></strong>, <strong><i
+												class="bp-example-docs-option-value">originalEvent</i></strong>,
+										<strong><i class="bp-example-docs-option-value">type</i></strong>,<strong><i
+												class="bp-example-docs-option-value">page</i></strong>). If you
+										would
+										like the stop the page change from happening. Simply call
+										event.stopImmediatePropagation() and do the page change yourself if
+										applicable later. See <a href="#page-clicked-event" title="Click to
+											see
+											the Page Clicked Event Example.">page-clicked Event example</a> for
+										more detail. Also the stoppable page change within page click event is
+										demonstrated in See <a href="#page-clicked-event-stoppable"
+											title="Click to see the Stopping Page Change within Page Clicked
+											Event
+											Example.">Stopping Page Change Within Page Clicked Event</a> for more
+										detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">onPageChanged</td>
+									<td>function</td>
+									<td></td>
+									<td>onPageChanged is the handle for the page-changed event. The
+										signature of the handler is function(<strong><i
+												class="bp-example-docs-option-value">event</i></strong>, <strong><i
+												class="bp-example-docs-option-value">oldPage</i></strong>, <strong><i
+												class="bp-example-docs-option-value">newPage</i></strong>). See <a
+											href="#page-changed-event" title="Click to see the Page Changed Event
+											example">page-changed Event example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">ajaxUrl</td>
+									<td>string or function</td>
+									<td>null</td>
+									<td>This URL user for ajax requests when page changed. For work it also
+										need <i clas="bp-example-docs-option-attr">targetElement</i>.
+										Once supplied as a function, the following parameters are given: <i
+											class="bp-example-docs-option-value">currentPage</i>.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">targetElement</td>
+									<td>sting or HTMLElement or JQueryObject</td>
+									<td>null</td>
+									<td>Target where will be placed ajax response.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">loadingElement</td>
+									<td>sting or HTMLElement or JQueryObject</td>
+									<td>null</td>
+									<td>Element that will be shown while ajax request in process. Optional.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">ajaxData</td>
+									<td>object or function</td>
+									<td>null</td>
+									<td>This data will be put to ajax request. Optional. Once supplied as a
+										function, the following parameters are given: <i
+											class="bp-example-docs-option-value">currentPage</i>.</td>
+								</tr>
+								<tr>
+									<td class="bp-example-docs-option-attr">ajaxSettings</td>
+									<td>JQuery Ajax Options or function</td>
+									<td>null</td>
+									<td>If this parameter is setted then will be used custom Ajax call (by
+										$.ajax()) and this settings will be put as parameter.
+										<i>targetElement</i> and <i>loadingElement</i> not used. If <i>ajaxUrl</i>
+										and/or <i>ajaxData</i> specified them will be puted to ajaxSettings.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="public-methods">
+						<h3>Public Methods</h3>
+						<p>
+							Bootstrap Paginator have the following public method for controlling the
+							component or accessing the state of the component.
+						</p>
+						<table class="table table-stripe table-hover">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Parameters</th>
+									<th>Return</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">show</td>
+									<td class="bp-docs-method-table-parameter-cell">page</td>
+									<td></td>
+									<td>
+										Function <strong>show</strong> makes the Bootstrap Paginator to show
+										the specified page. This method will trigger the page-changed event if
+										the specified page differs from the current page. See <a
+											href="#show-function">Show Function example</a> for more detail.
+									</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">showFirst</td>
+									<td></td>
+									<td></td>
+									<td>
+										Function <strong>showFirst</strong> shows the first page. This method
+										will trigger the page-changed event as the show function. See <a
+											href="#show-function">Show Function example</a> for more detail.
+									</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">showPrevious</td>
+									<td></td>
+									<td></td>
+									<td>
+										Function <strong>showPrevious</strong> shows the previous page. This
+										method will trigger the page-changed event as the show function. See
+										<a
+											href="#show-function">Show Function example</a> for more detail.
+									</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">showNext</td>
+									<td></td>
+									<td></td>
+									<td>Function <strong>showNext</strong> shows the next page. This method
+										will trigger the page-changed event as the show function. See <a
+											href="#show-function">Show Function example</a> for more detail.</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">showLast</td>
+									<td></td>
+									<td></td>
+									<td>
+										Function <strong>showLast</strong> shows the last page. This method
+										will trigger the page-changed event as the show function. See <a
+											href="#show-function">Show Function example</a> for more detail.
+									</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">reload</td>
+									<td></td>
+									<td></td>
+									<td>Trigger the page-changed event that also activate ajax call if <i>ajaxUrl</i>
+										and <i>targetElement</i> or <i>ajaxSettings</i> specified.</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">setOptions</td>
+									<td><i>object</i></td>
+									<td></td>
+									<td>
+										Function <strong>setOptions</strong> updates options to the current
+										setting. Attributes in the option object can be any combination in the
+										option table. A common example is to update the total pages when it's
+										changed. See <a href="#set-options">setOptions Function exmaple</a>
+										for
+										more information.
+									</td>
+								</tr>
+								<tr>
+									<td class="bp-docs-method-table-name-cell">getOption</td>
+									<td><i>string</i></td>
+									<td>object</td>
+									<td>
+										Function returns option value by it name. If it called without
+										paramters it returns copy of options object.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="events">
+						<h3>Events</h3>
+						<p>Bootstrap Paginator has two event. You can bind to them either through
+							the callback through the handler or using the .on method in jQuery. </p>
+						<table class="table table-hover table-striped">
+							<thead>
+								<tr>
+									<th>Event</th>
+									<th>Handler Signatrue</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="bp-docs-event-table-name-cell">page-clicked</td>
+									<td class="bp-docs-event-table-signature-cell">function(<i>event</i>,
+										<i>originalEvent</i>, <i>type</i>, <i>page</i>)</td>
+									<td>It will be triggered when the page item is clicked. Parameter
+										originalEvent is provided as if you need to have control over the
+										original click event. Plus, the type and page is associated with the
+										clicked item. For more information please see <a
+											href="#page-clicked-event" title="Click to see the page-clicked
+											Event">page-clicked Event example</a>. </td>
+								</tr>
+								<tr>
+									<td class="bp-docs-event-table-name-cell">page-changed</td>
+									<td class="bp-docs-event-table-signature-cell">function(<i>event</i>,
+										<i>oldPage</i>, <i>newPage</i>)</td>
+									<td>page-changed event will be triggered when the current page is
+										changed via show method or its variant. oldPage and newPage together
+										represents the change. Please see <a href="#page-changed-event"
+											title="Click to see the page-changed Event">page-changed Event
+											example</a>
+										for more detail.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div id="public-methods">
-					<h3>Public Methods</h3>
-					<p>
-						Bootstrap Paginator have the following public method for controlling the
-						component or accessing the state of the component.
-					</p>
-					<table class="table table-stripe table-hover">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Parameters</th>
-								<th>Return</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">show</td>
-								<td class="bp-docs-method-table-parameter-cell">page</td>
-								<td></td>
-								<td>
-									Function <strong>show</strong> makes the Bootstrap Paginator to show
-									the specified page. This method will trigger the page-changed event if
-									the specified page differs from the current page. See <a
-										href="#show-function">Show Function example</a> for more detail.
-								</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">showFirst</td>
-								<td></td>
-								<td></td>
-								<td>
-									Function <strong>showFirst</strong> shows the first page. This method
-									will trigger the page-changed event as the show function. See <a
-										href="#show-function">Show Function example</a> for more detail.
-								</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">showPrevious</td>
-								<td></td>
-								<td></td>
-								<td>
-									Function <strong>showPrevious</strong> shows the previous page. This
-									method will trigger the page-changed event as the show function. See <a
-										href="#show-function">Show Function example</a> for more detail.
-								</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">showNext</td>
-								<td></td>
-								<td></td>
-								<td>Function <strong>showNext</strong> shows the next page. This method
-									will trigger the page-changed event as the show function. See <a
-										href="#show-function">Show Function example</a> for more detail.</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">showLast</td>
-								<td></td>
-								<td></td>
-								<td>
-									Function <strong>showLast</strong> shows the last page. This method
-									will trigger the page-changed event as the show function. See <a
-										href="#show-function">Show Function example</a> for more detail.
-								</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">reload</td>
-								<td></td>
-								<td></td>
-								<td>Trigger the page-changed event that also activate ajax call if <i>ajaxUrl</i> and <i>targetElement</i> or <i>ajaxSettings</i> specified.</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">setOptions</td>
-								<td><i>object</i></td>
-								<td></td>
-								<td>
-									Function <strong>setOptions</strong> updates options to the current
-									setting. Attributes in the option object can be any combination in the
-									option table. A common example is to update the total pages when it's
-									changed. See <a href="#set-options">setOptions Function exmaple</a> for
-									more information.
-								</td>
-							</tr>
-							<tr>
-								<td class="bp-docs-method-table-name-cell">getOption</td>
-								<td><i>string</i></td>
-								<td>object</td>
-								<td>
-									Function returns option value by it name. If it called without paramters it returns copy of options object.
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div id="events">
-					<h3>Events</h3>
-					<p>Bootstrap Paginator has two event. You can bind to them either through
-						the callback through the handler or using the .on method in jQuery. </p>
-					<table class="table table-hover table-striped">
-						<thead>
-							<tr>
-								<th>Event</th>
-								<th>Handler Signatrue</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="bp-docs-event-table-name-cell">page-clicked</td>
-								<td class="bp-docs-event-table-signature-cell">function(<i>event</i>,
-									<i>originalEvent</i>, <i>type</i>, <i>page</i>)</td>
-								<td>It will be triggered when the page item is clicked. Parameter
-									originalEvent is provided as if you need to have control over the
-									original click event. Plus, the type and page is associated with the
-									clicked item. For more information please see <a
-										href="#page-clicked-event" title="Click to see the page-clicked
-										Event">page-clicked Event example</a>. </td>
-							</tr>
-							<tr>
-								<td class="bp-docs-event-table-name-cell">page-changed</td>
-								<td class="bp-docs-event-table-signature-cell">function(<i>event</i>,
-									<i>oldPage</i>, <i>newPage</i>)</td>
-								<td>page-changed event will be triggered when the current page is
-									changed via show method or its variant. oldPage and newPage together
-									represents the change. Please see <a href="#page-changed-event"
-										title="Click to see the page-changed Event">page-changed Event example</a>
-									for more detail.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div id="example">
-				<h2>Examples</h2>
-				<div id="minimum-configuration">
-					<h3>Minimum Configuration</h3>
-					<p>
-						Initialization requires only two attributes in the configuration object.
-						Attributes <strong class='bp-example-docs-option-attr'>currentPage</strong>
-						and <strong class="bp-example-docs-option-attr">totalPages</strong> are
-						needed to get it running.
-					</p>
-					<div class="bp-docs-example"><ul id="bp-example-initialization"></ul></div>
-					<pre class="html">
+				<div id="example">
+					<h2>Examples</h2>
+					<div id="minimum-configuration">
+						<h3>Minimum Configuration</h3>
+						<p>
+							Initialization requires only two attributes in the configuration object.
+							Attributes <strong class='bp-example-docs-option-attr'>currentPage</strong>
+							and <strong class="bp-example-docs-option-attr">totalPages</strong> are
+							needed to get it running.
+						</p>
+						<div class="bp-docs-example"><ul id="bp-example-initialization"></ul></div>
+						<pre class="html">
 				<code>
 	&lt;div id="example"&gt;&lt;/div&gt;
 	&lt;script type='text/javascript'&gt;
@@ -508,27 +531,27 @@
 	&lt;/script&gt;
 				</code>
 			</pre>
-				</div>
-				<div id="size-alignment">
-					<h3>Size</h3>
-					<p>
-						Size in Bootstrap Paginator is set via <strong
-							class="bp-example-docs-option-attr">size</strong> attribute. It accepts
-						the following values: <i class="bp-example-docs-option-value">large</i>,<i
-							class="bp-example-docs-option-value">normal</i>, <i
-							class="bp-example-docs-option-value">small</i>.
-					</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-size-alignment"></ul>
-						<div class="bp-example-btn-controls">
-							<div class="btn-group" data-toggle="buttons-radio">
-								<button type="button" id="bp-size-small" class="btn btn-info">Small</button>
-								<button type="button" id="bp-size-normal" class="btn btn-info active">Normal</button>
-								<button type="button" id="bp-size-large" class="btn btn-info">Large</button>
+					</div>
+					<div id="size-alignment">
+						<h3>Size</h3>
+						<p>
+							Size in Bootstrap Paginator is set via <strong
+								class="bp-example-docs-option-attr">size</strong> attribute. It accepts
+							the following values: <i class="bp-example-docs-option-value">large</i>,<i
+								class="bp-example-docs-option-value">normal</i>, <i
+								class="bp-example-docs-option-value">small</i>.
+						</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-size-alignment"></ul>
+							<div class="bp-example-btn-controls">
+								<div class="btn-group" data-toggle="buttons-radio">
+									<button type="button" id="bp-size-small" class="btn btn-info">Small</button>
+									<button type="button" id="bp-size-normal" class="btn btn-info active">Normal</button>
+									<button type="button" id="bp-size-large" class="btn btn-info">Large</button>
+								</div>
 							</div>
 						</div>
-					</div>
-					<pre id="bp-size-alignment-pre">
+						<pre id="bp-size-alignment-pre">
 				<code class="javascript" id="bp-size-alignment-code">
 		var options = {
 			currentPage: 3,
@@ -539,20 +562,20 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="page-item-text">
-					<h3>Page Item Text</h3>
-					<p>You can change the text of the page items. It is done via an attribute
-						called <strong class="bp-example-docs-option-attr">itemTexts</strong> in
-						the configuration object. The value is a function that should returns a
-						string. <strong><i class="bp-example-docs-option-value">type</i></strong>,
-						<strong><i class="bp-example-docs-option-value">page</i></strong>,
-						<strong><i class="bp-example-docs-option-value">current</i></strong> are
-						given as the parameters. </p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-item-text"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="page-item-text">
+						<h3>Page Item Text</h3>
+						<p>You can change the text of the page items. It is done via an attribute
+							called <strong class="bp-example-docs-option-attr">itemTexts</strong> in
+							the configuration object. The value is a function that should returns a
+							string. <strong><i class="bp-example-docs-option-value">type</i></strong>,
+							<strong><i class="bp-example-docs-option-value">page</i></strong>,
+							<strong><i class="bp-example-docs-option-value">current</i></strong> are
+							given as the parameters. </p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-item-text"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -576,16 +599,20 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="page-item-tooltip-text">
-					<h3>Page Item Tooltip Text</h3>
-					<p>Tooltip text defined in regional settings. By default bootstrap paginator supports only english. For additional strings you must set <code>$.fn.bootstrapPaginator.regional["you language code"]</code> object.
-					Default language selected by browser settings or you can specify language in options.
-					</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-item-tooltip-text"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="page-item-tooltip-text">
+						<h3>Page Item Tooltip Text</h3>
+						<p>Tooltip text defined in regional settings. By default bootstrap
+							paginator supports only english. For additional strings you must set
+							<code>$.fn.bootstrapPaginator.regional["you language code"]</code>
+							object.
+							Default language selected by browser settings or you can specify language
+							in options.
+						</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-item-tooltip-text"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		$.fn.bootstrapPaginator.regional["custom"] = {
 			first: "Tooltip for first page",
@@ -605,17 +632,17 @@
 		$('#bp-example-page-item-tooltip-text').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="use-bootstrap-tooltip">
-					<h3>Use Bootstrap Tooltip</h3>
-					<p>Instead of using the title in the &lt;a&gt; tag, you can use Bootstrap
-						Tooltip for the tooltip options. There is a switch named <strong
-							class="bp-example-docs-option-attr">useBootstrapTooltip</strong> to turn
-						it on. It is off by default.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-item-use-bootstrap-tooltip"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="use-bootstrap-tooltip">
+						<h3>Use Bootstrap Tooltip</h3>
+						<p>Instead of using the title in the &lt;a&gt; tag, you can use Bootstrap
+							Tooltip for the tooltip options. There is a switch named <strong
+								class="bp-example-docs-option-attr">useBootstrapTooltip</strong> to turn
+							it on. It is off by default.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-item-use-bootstrap-tooltip"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -626,22 +653,23 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="configure-bootstrap-tooltip">
-					<h3>Configure Bootstrap Tooltip</h3>
-					<p>
-						You can use <strong class="bp-example-docs-option-attr">bootstrapTooltipOptions</strong>
-						to config the bootstrap tooltip used in the bootstrapPaginator. It is the
-						same as the configuration we've seen in Bootstrap Tooltip's documentation.
-						For more information please see <a target="_blank"
-							href="http://twitter.github.io/bootstrap/javascript.html#tooltips"
-							title="See Bootstrap Documentation for more information.">Bootstrap
-							Tooltip Documentation</a>.
-					</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-item-bootstrap-tooltip-configuration"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="configure-bootstrap-tooltip">
+						<h3>Configure Bootstrap Tooltip</h3>
+						<p>
+							You can use <strong class="bp-example-docs-option-attr">bootstrapTooltipOptions</strong>
+							to config the bootstrap tooltip used in the bootstrapPaginator. It is the
+							same as the configuration we've seen in Bootstrap Tooltip's
+							documentation.
+							For more information please see <a target="_blank"
+								href="http://twitter.github.io/bootstrap/javascript.html#tooltips"
+								title="See Bootstrap Documentation for more information.">Bootstrap
+								Tooltip Documentation</a>.
+						</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-item-bootstrap-tooltip-configuration"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		$.fn.bootstrapPaginator.regional["custom"] = {
 			first: "<i>Tooltip for first page</i>",
@@ -666,22 +694,22 @@
 		$('#bp-example-page-item-bootstrap-tooltip-configuration').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="item-container-class">
-					<h3>Controlling the Item Container Class</h3>
-					<p>Item container class is controllable via an attribute <strong
-							class="bp-example-docs-option-attr">itemContainerClass</strong>. This
-						attribute accepts a function that returns a string. <strong><i
-								class="bp-example-docs-option-value">type</i></strong>, <strong><i
-								class="bp-example-docs-option-value">page</i></strong>, <strong><i
-								class="bp-example-docs-option-value">current</i></strong> are given as
-						the parameters. One example is that the <i>active</i> class is added via
-						this attribute by default. Another example is that you can easily add the
-						pointer cursor on the page items. See the code and demo below.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-item-container-class"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="item-container-class">
+						<h3>Controlling the Item Container Class</h3>
+						<p>Item container class is controllable via an attribute <strong
+								class="bp-example-docs-option-attr">itemContainerClass</strong>. This
+							attribute accepts a function that returns a string. <strong><i
+									class="bp-example-docs-option-value">type</i></strong>, <strong><i
+									class="bp-example-docs-option-value">page</i></strong>, <strong><i
+									class="bp-example-docs-option-value">current</i></strong> are given as
+							the parameters. One example is that the <i>active</i> class is added via
+							this attribute by default. Another example is that you can easily add the
+							pointer cursor on the page items. See the code and demo below.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-item-container-class"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -698,17 +726,17 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="number-of-pages">
-					<h3>Number of Pages</h3>
-					<p>The max number of pages is controllable via attribute <strong
-							class="bp-example-docs-option-attr">numberOfPages</strong>. This
-						attribute accepts only integer. The following example shows the 3 pages
-						example.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-number-of-pages"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="number-of-pages">
+						<h3>Number of Pages</h3>
+						<p>The max number of pages is controllable via attribute <strong
+								class="bp-example-docs-option-attr">numberOfPages</strong>. This
+							attribute accepts only integer. The following example shows the 3 pages
+							example.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-number-of-pages"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 2,
@@ -719,23 +747,23 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="page-url">
-					<h3>Page URL</h3>
-					<p>What if your pagination relies on the page parameters that's set in the
-						url rather than ajax mode. That's where you need <strong
-							class="bp-example-docs-option-attr">pageUrl</strong>. It accepts a
-						function that returns a string as url for different type of pages.
-						<strong><i class="bp-example-docs-option-value">type</i></strong>,
-						<strong><i class="bp-example-docs-option-value">page</i></strong>,
-						<strong><i class="bp-example-docs-option-value">current</i></strong> are
-						given as the parameters.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-url"></ul>
-						<div id="page-url-alert" class="alert alert-info"><span
-								id="page-url-alert-content">Click on the pages to show the url</span></div>
 					</div>
-					<pre class="javascript">
+					<div id="page-url">
+						<h3>Page URL</h3>
+						<p>What if your pagination relies on the page parameters that's set in the
+							url rather than ajax mode. That's where you need <strong
+								class="bp-example-docs-option-attr">pageUrl</strong>. It accepts a
+							function that returns a string as url for different type of pages.
+							<strong><i class="bp-example-docs-option-value">type</i></strong>,
+							<strong><i class="bp-example-docs-option-value">page</i></strong>,
+							<strong><i class="bp-example-docs-option-value">current</i></strong> are
+							given as the parameters.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-page-url"></ul>
+							<div id="page-url-alert" class="alert alert-info"><span
+									id="page-url-alert-content">Click on the pages to show the url</span></div>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -750,22 +778,22 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="controlling-the-presence-of-page-item">
-					<h3>Controlling The Presence of Page Item</h3>
-					<p>The presence of page items are controllable. For example, if you don't
-						want the first and the last page item. You can simply do that via <strong
-							class="bp-example-docs-option-attr">shouldShowPage</strong>. The
-						attribute accepts a simple boolean value or a function that returns the
-						situation according to the <strong><i
-								class="bp-example-docs-option-value">type</i></strong>, <strong><i
-								class="bp-example-docs-option-value">page</i></strong> and <strong><i
-								class="bp-example-docs-option-value">current</i></strong> given. The
-						following example hide the first and last page item.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-presence-of-page"></ul>
 					</div>
-					<pre class="javascript">
+					<div id="controlling-the-presence-of-page-item">
+						<h3>Controlling The Presence of Page Item</h3>
+						<p>The presence of page items are controllable. For example, if you don't
+							want the first and the last page item. You can simply do that via <strong
+								class="bp-example-docs-option-attr">shouldShowPage</strong>. The
+							attribute accepts a simple boolean value or a function that returns the
+							situation according to the <strong><i
+									class="bp-example-docs-option-value">type</i></strong>, <strong><i
+									class="bp-example-docs-option-value">page</i></strong> and <strong><i
+									class="bp-example-docs-option-value">current</i></strong> given. The
+							following example hide the first and last page item.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-presence-of-page"></ul>
+						</div>
+						<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -785,12 +813,13 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-			<p>Also you can control the presense of Buttons "first", "prev", "next" and "last" by properties <strong class="bp-example-docs-option-attr">alwaysDisplayNextPrevButtons</strong>
-			and <strong class="bp-example-docs-option-attr">alwaysDisplayFirstLastButtons</strong>.</p>
-				<div class="bp-docs-example">
-					<ul id="bp-example-presence-of-page-always-property"></ul>
-				</div>
-				<pre class="javascript">
+						<p>Also you can control the presense of Buttons "first", "prev", "next"
+							and "last" by properties <strong class="bp-example-docs-option-attr">alwaysDisplayNextPrevButtons</strong>
+							and <strong class="bp-example-docs-option-attr">alwaysDisplayFirstLastButtons</strong>.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-presence-of-page-always-property"></ul>
+						</div>
+						<pre class="javascript">
 			<code>
 	
 		var options = {
@@ -803,134 +832,138 @@
 		$('#bp-example-presence-of-page-always-property').bootstrapPaginator(options);
 		</code>
 		</pre>
-				</div>
-				<div id="show-function">
-					<h3>show Function</h3>
-					<p>Function <strong class="bp-example-docs-option-attr">show</strong> is
-						the interface that can be use to control the current page of Bootstrap
-						Paginator from the outside. It accepts a number as it's parameter. If the
-						current page is out of bound of the current configuration. An exception
-						will be thrown. Besides show function, there are some variants. They are,
-						<strong class="bp-example-docs-option-attr">showFirst</strong>, <strong
-							class="bp-example-docs-option-attr">showPrevious</strong>, <strong
-							class="bp-example-docs-option-attr">showNext</strong> and <strong
-							class="bp-example-docs-option-attr">showLast</strong>.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-show-function"></ul>
-						<div>
-							Go to page:
-							<select id="show-page-select">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-							</select>
-							<div class="btn-group">
-								<button class="btn btn-info" id="bp-example-show-first-btn">Show First</button>
-								<button class="btn btn-info" id="bp-example-show-prev-btn">Show Previous</button>
-								<button class="btn btn-info" id="bp-example-show-next-btn">Show Next</button>
-								<button class="btn btn-info" id="bp-example-show-last-btn">Show Last</button>
-							</div>
-						</div>
-						<div id="show-function-alert" class="alert alert-info"><span
-								id="show-function-content">Click on the buttons or select the pages to
-								invoke the show function.</span></div>
 					</div>
-					<pre class="javascript">
+					<div id="show-function">
+						<h3>show Function</h3>
+						<p>Function <strong class="bp-example-docs-option-attr">show</strong> is
+							the interface that can be use to control the current page of Bootstrap
+							Paginator from the outside. It accepts a number as it's parameter. If the
+							current page is out of bound of the current configuration. An exception
+							will be thrown. Besides show function, there are some variants. They are,
+							<strong class="bp-example-docs-option-attr">showFirst</strong>, <strong
+								class="bp-example-docs-option-attr">showPrevious</strong>, <strong
+								class="bp-example-docs-option-attr">showNext</strong> and <strong
+								class="bp-example-docs-option-attr">showLast</strong>.</p>
+						<div class="bp-docs-example">
+							<ul id="bp-example-show-function"></ul>
+							<div>
+								Go to page:
+								<select id="show-page-select">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+								<div class="btn-group">
+									<button class="btn btn-info" id="bp-example-show-first-btn">Show First</button>
+									<button class="btn btn-info" id="bp-example-show-prev-btn">Show
+										Previous</button>
+									<button class="btn btn-info" id="bp-example-show-next-btn">Show Next</button>
+									<button class="btn btn-info" id="bp-example-show-last-btn">Show Last</button>
+								</div>
+							</div>
+							<div id="show-function-alert" class="alert alert-info"><span
+									id="show-function-content">Click on the buttons or select the pages to
+									invoke the show function.</span></div>
+						</div>
+						<pre class="javascript">
 				<code id="show-function-code">
 					// waiting for the function to be called
 				</code>
 			</pre>
-				</div>
-				<div id="get-pages">
-					<h3>getOption Function</h3>
-					<p>Function <strong class="bp-example-docs-option-attr">getOption</strong> caleld without parameter
-						returns a copy of options object.
-					<div class="bp-docs-example">
-						<ul id="bp-example-get-pages-function"></ul>
-						<div>
-							<button class="btn btn-info" id="bp-example-get-pages-btn">Invoke Get
-								Option</button>
-						</div>
 					</div>
-					<pre class="javascript">
+					<div id="get-pages">
+						<h3>getOption Function</h3>
+						<p>Function <strong class="bp-example-docs-option-attr">getOption</strong>
+							caleld without parameter
+							returns a copy of options object.
+							<div class="bp-docs-example">
+								<ul id="bp-example-get-pages-function"></ul>
+								<div>
+									<button class="btn btn-info" id="bp-example-get-pages-btn">Invoke Get
+										Option</button>
+								</div>
+							</div>
+							<pre class="javascript">
 				<code id="get-pages-code">
 		
 				</code>
 			</pre>
-				</div>
-				<div id="set-options">
-					<h3>setOptions function</h3>
-					<p>Function <strong class="bp-example-docs-option-attr">setOptions</strong>
-						updates the options for Bootstrap Paginator. You don't have to call the
-						method specifically after initialization, just use
-						$('#example').bootstrapPaginator(optionsToUpdate) can also achieve the
-						same effect. The following example will allow you to set numberOfPages and
-						totalPages attribute.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-set-options-function"></ul>
-						<div>Number of Pages:
-							<select id="bp-example-set-option-number-of-page-select">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3" selected>3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-							</select>
-							&nbsp;
-							Total Pages:
-							<select id="bp-example-set-option-total-pages-select">
-								<option value="10">10</option>
-								<option value="20">20</option>
-								<option value="30">30</option>
-								<option value="40">40</option>
-								<option value="50">50</option>
-								<option value="60">60</option>
-								<option value="70">70</option>
-								<option value="80">80</option>
-								<option value="90">90</option>
-								<option value="100">100</option>
-							</select>
-							&nbsp;
-							<button class="btn btn-info" id="bp-exmaple-set-option-update-btn">Update</button>
 						</div>
-					</div>
-					<pre class="javascript">
+						<div id="set-options">
+							<h3>setOptions function</h3>
+							<p>Function <strong class="bp-example-docs-option-attr">setOptions</strong>
+								updates the options for Bootstrap Paginator. You don't have to call the
+								method specifically after initialization, just use
+								$('#example').bootstrapPaginator(optionsToUpdate) can also achieve the
+								same effect. The following example will allow you to set numberOfPages
+								and
+								totalPages attribute.</p>
+							<div class="bp-docs-example">
+								<ul id="bp-example-set-options-function"></ul>
+								<div>Number of Pages:
+									<select id="bp-example-set-option-number-of-page-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3" selected>3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									&nbsp;
+									Total Pages:
+									<select id="bp-example-set-option-total-pages-select">
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+										<option value="60">60</option>
+										<option value="70">70</option>
+										<option value="80">80</option>
+										<option value="90">90</option>
+										<option value="100">100</option>
+									</select>
+									&nbsp;
+									<button class="btn btn-info" id="bp-exmaple-set-option-update-btn">Update</button>
+								</div>
+							</div>
+							<pre class="javascript">
 				<code id="set-option-code">
 	
 				</code>
 			</pre>
-				</div>
-				<div id="page-clicked-event">
-					<h3>page-clicked Event</h3>
-					<p>The event page-clicked will be triggered when a page item is clicked.
-						You can register the handler via the attribute <strong
-							class="bp-example-docs-option-attr">onPageClicked</strong> or you can
-						simply use the <code>on('page-clicked',handler)</code>. The signature of
-						the handler is function(event, originalEvent, type,page). The <i
-							class="bp-example-docs-option-value">originalEvent</i> is the original
-						click event generated by the page item. It exists for the case that you
-						might want to get call preventDefault or stopPropagation on it. The
-						following example will shows the type and page in the alert when the page
-						is clicked.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-clicked-event"></ul>
-						<div id="page-clicked-event-alert" class="alert alert-info"><span
-								id="page-clicked-alert-content">Click on the pages to trigger the
-								page-clicked event.</span></div>
-					</div>
-					<pre class="javascript">
+						</div>
+						<div id="page-clicked-event">
+							<h3>page-clicked Event</h3>
+							<p>The event page-clicked will be triggered when a page item is clicked.
+								You can register the handler via the attribute <strong
+									class="bp-example-docs-option-attr">onPageClicked</strong> or you can
+								simply use the <code>on('page-clicked',handler)</code>. The signature of
+								the handler is function(event, originalEvent, type,page). The <i
+									class="bp-example-docs-option-value">originalEvent</i> is the original
+								click event generated by the page item. It exists for the case that you
+								might want to get call preventDefault or stopPropagation on it. The
+								following example will shows the type and page in the alert when the
+								page
+								is clicked.</p>
+							<div class="bp-docs-example">
+								<ul id="bp-example-page-clicked-event"></ul>
+								<div id="page-clicked-event-alert" class="alert alert-info"><span
+										id="page-clicked-alert-content">Click on the pages to trigger the
+										page-clicked event.</span></div>
+							</div>
+							<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -943,20 +976,22 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="page-clicked-event-stoppable">
-					<h3>Stopping the page change within Page Clicked event</h3>
-					<p>If an ajax call is triggered through page click event and you want the
-						page change happen after the content is loaded. You can simply stop the
-						default page change event by calling event.stopImmediatePropagation() and
-						do it later when the document is loaded.</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-clicked-event-stoppable"></ul>
-						<div id="page-clicked-event-alert-stoppable" class="alert alert-info"><span
-								id="page-clicked-alert-content-stoppable">Click on the pages to trigger
-								the page-clicked event.</span></div>
-					</div>
-					<pre class="javascript">
+						</div>
+						<div id="page-clicked-event-stoppable">
+							<h3>Stopping the page change within Page Clicked event</h3>
+							<p>If an ajax call is triggered through page click event and you want the
+								page change happen after the content is loaded. You can simply stop the
+								default page change event by calling event.stopImmediatePropagation()
+								and
+								do it later when the document is loaded.</p>
+							<div class="bp-docs-example">
+								<ul id="bp-example-page-clicked-event-stoppable"></ul>
+								<div id="page-clicked-event-alert-stoppable" class="alert alert-info"><span
+										id="page-clicked-alert-content-stoppable">Click on the pages to
+										trigger
+										the page-clicked event.</span></div>
+							</div>
+							<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -985,35 +1020,37 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="page-changed-event">
-					<h3>page-changed Event</h3>
-					<p>The event page-changed will be triggered when the current page is
-						changed to another one. This event only cares about the change between
-						pages. So it's signature doesn't include the type parameter. Instead, the
-						old and new value of the change are given. </p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-page-changed-event"></ul>
-						<div>
-							Go to page:
-							<select id="page-changed-select">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-							</select>
 						</div>
-						<div id="page-changed-event-alert" class="alert alert-info"><span
-								id="page-changed-alert-content">Click on the pages or type the selected
-								pages trigger the page-change event.</span></div>
-					</div>
-					<pre class="javascript">
+						<div id="page-changed-event">
+							<h3>page-changed Event</h3>
+							<p>The event page-changed will be triggered when the current page is
+								changed to another one. This event only cares about the change between
+								pages. So it's signature doesn't include the type parameter. Instead,
+								the
+								old and new value of the change are given. </p>
+							<div class="bp-docs-example">
+								<ul id="bp-example-page-changed-event"></ul>
+								<div>
+									Go to page:
+									<select id="page-changed-select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</div>
+								<div id="page-changed-event-alert" class="alert alert-info"><span
+										id="page-changed-alert-content">Click on the pages or type the
+										selected
+										pages trigger the page-change event.</span></div>
+							</div>
+							<pre class="javascript">
 				<code>
 		var options = {
 			currentPage: 3,
@@ -1026,16 +1063,17 @@
 		$('#example').bootstrapPaginator(options);
 				</code>
 			</pre>
-				</div>
-				<div id="ajax-call">
-					<h3>Ajax call</h3>
-					<p>You can set options for auto ajax call. Chromium-based browser blocks this demo. Try Firefox or Edge (non-chromium version).</p>
-					<div class="bp-docs-example">
-						<ul id="bp-example-ajax-call"></ul>
-						<div id="ajax-page" class="alert alert-info"><span
-								id="ajax-content">Click on the pages.</span></div>
-					</div>
-					<pre class="javascript">
+						</div>
+						<div id="ajax-call">
+							<h3>Ajax call</h3>
+							<p>You can set options for auto ajax call. Chromium-based browser blocks
+								this demo. Try Firefox or Edge (non-chromium version).</p>
+							<div class="bp-docs-example">
+								<ul id="bp-example-ajax-call"></ul>
+								<div id="ajax-page" class="alert alert-info"><span
+										id="ajax-content">Click on the pages.</span></div>
+							</div>
+							<pre class="javascript">
 				<code>
 		let options = {
 			currentPage: 1,
@@ -1048,27 +1086,34 @@
 		$("#bp-example-ajax-call").bootstrapPaginator(options);
 				</code>
 			</pre>
+						</div>
+					</div>
+					<div class="text-center">
+						<hr>
+						Bootstrap4 Paginator is licensed under the MIT License
+						Version 2.0. Coded by Kislenko Mikhail. Original source code is written by
+						Yun Lai.
+
+
+					</div>
 				</div>
-			</div>
-			<div class="text-center">
-				<hr>
-				Bootstrap4 Paginator is licensed under the MIT License
-				Version 2.0. Coded by Kislenko Mikhail. Original source code is written by Yun Lai.
-
-
-			</div>
-		</div>
-		<a href="https://github.com/Vampire2008/bootstrap4-paginator"><img style="position:
-				absolute; top: 0; right: 0; border: 0;z-index: 99999;"
-				src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
-				alt="Fork me on GitHub"></a>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-		<script src="lib/bootstrap-paginator.min.js"></script>
-		<script src="lib/bootstrap-paginator.ru.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" type="text/javascript"></script>
-		<!-- <script src="../lib/jquery.history.min.js" type="text/javascript"></script> -->
-		<script type="text/javascript">
+				<a href="https://github.com/Vampire2008/bootstrap4-paginator"><img
+						style="position:
+						absolute; top: 0; right: 0; border: 0;z-index: 99999;"
+						src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+						alt="Fork me on GitHub"></a>
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+					type="text/javascript"></script>
+				<script
+					src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+					type="text/javascript"></script>
+				<script src="lib/bootstrap-paginator.min.js"></script>
+				<script src="lib/bootstrap-paginator.ru.min.js"></script>
+				<script
+					src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"
+					type="text/javascript"></script>
+				<!-- <script src="../lib/jquery.history.min.js" type="text/javascript"></script> -->
+				<script type="text/javascript">
 
 	function getStartedInitialization(){
 		var options = {
@@ -1679,5 +1724,5 @@
 	});
 
 </script>
-	</body>
-</html>
+			</body>
+		</html>
