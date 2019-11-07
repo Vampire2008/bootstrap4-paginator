@@ -1,4 +1,6 @@
 # Bootstrap4 Paginator v2.0
+[![Nuget](https://img.shields.io/nuget/v/bootstrap4-paginator)](https://www.nuget.org/packages/bootstrap4-paginator/)
+[![npm](https://img.shields.io/npm/v/bootstrap4-paginator?color=red)](https://www.npmjs.com/package/bootstrap4-paginator)
 
 ---
 
